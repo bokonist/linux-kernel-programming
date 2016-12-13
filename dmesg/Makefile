@@ -1,7 +1,9 @@
+# https://www.kernel.org/doc/Documentation/kbuild/makefiles.txt
+
 # recent vendors only allow signed kernel modules to be loaded to avoid rootkits. so we need to disable signature verificiation.
 CONFIG_MODULE_SIG=n
 CONFIG_MODULE_SIG_ALL=n
-#obj-m specifies which file to make
+#$(obj-m) specifies object files which are built as loadable kernel modules.
 obj-m += helloworld.o
 
 # $(uname-r) will give the currently running kernel.
