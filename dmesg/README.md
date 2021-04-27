@@ -17,6 +17,6 @@ this will load the built kernel module to the currently running kernel.
 
 we'll get thte output on the debug log
 
-`sudo rmmode helloworld.ko`
+`sudo rmmod helloworld`
 
 this will unload the module.
